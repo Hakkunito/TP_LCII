@@ -34,7 +34,7 @@ namespace TP_LCII
         {
 
         }
-        public void CargarUnDatagrid(string consulta)
+        public void CargarUnDatagrid(string consulta,string texto)
         {
             // cambiar el codigo de la conexion 
             SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-CBD3HB7\SQLEXPRESS;Initial Catalog=Fabrica;Integrated Security=True");
@@ -49,6 +49,8 @@ namespace TP_LCII
                 dataAdapter.Fill(dt);
                 dgvPrincipal.DataSource = dt;                                    
                 cn.Close();
+
+                lblConsulta.Text = texto;
             }
             catch (Exception ex)
             {
@@ -61,22 +63,27 @@ namespace TP_LCII
 
         private void btn_Consulta2_Click(object sender, EventArgs e)
         {
-            CargarUnDatagrid("");
+            CargarUnDatagrid("","");
         }
 
         private void btn_Consulta3_Click(object sender, EventArgs e)
         {
-            CargarUnDatagrid("");
+            CargarUnDatagrid("","");
         }
 
         private void btn_Consulta4_Click(object sender, EventArgs e)
         {
-            CargarUnDatagrid("");
+            CargarUnDatagrid("","");
         }
 
         private void btn_Consulta1_Click(object sender, EventArgs e)
         {
-            CargarUnDatagrid("select * from paises");
+            CargarUnDatagrid("select * from paises","paises");
+        }
+
+        private void btn_Consulta5_Click(object sender, EventArgs e)
+        {
+            CargarUnDatagrid("","");
         }
     }
 
