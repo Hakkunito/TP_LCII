@@ -14,8 +14,7 @@ namespace TP_LCII
 {
     public partial class Form1 : Form
     {
-        public SqlConnection conexion;
-        public SqlCommand comando;
+
         public Form1()
         {
             InitializeComponent();
@@ -58,10 +57,7 @@ namespace TP_LCII
             }
         }
         // faltan las consultas
-        private void btn_Consulta1_Click(object sender, EventArgs e)
-        {
-            CargarUnDatagrid("");
-        }
+
 
         private void btn_Consulta2_Click(object sender, EventArgs e)
         {
@@ -78,21 +74,10 @@ namespace TP_LCII
             CargarUnDatagrid("");
         }
 
-        }
-
         private void btn_Consulta1_Click(object sender, EventArgs e)
         {
-            conexion = new SqlConnection(@"Data Source=DESKTOP-JT4OIKA;Initial Catalog=Fabrica;Integrated Security=True");
-            conexion.Open();
-            DataTable Tabla = new DataTable();
-            comando = new SqlCommand();
-            comando.CommandText = "Select * from automoviles";
-            comando.Connection = conexion;
-            Tabla.Load(comando.ExecuteReader());
-            conexion.Close();
-
-            dataGridView1.ClearSelection();
-            dataGridView1.DataSource = Tabla;
+            CargarUnDatagrid("select * from paises");
         }
     }
+
 }
