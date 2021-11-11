@@ -40,6 +40,7 @@ namespace TP_LCII
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel_Tabla = new System.Windows.Forms.Panel();
             this.dgvPrincipal = new System.Windows.Forms.DataGridView();
+            this.lblConsulta = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel_Consulta.SuspendLayout();
             this.panel_Tabla.SuspendLayout();
@@ -150,6 +151,7 @@ namespace TP_LCII
             // panel_Consulta
             // 
             this.panel_Consulta.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.panel_Consulta.Controls.Add(this.lblConsulta);
             this.panel_Consulta.Controls.Add(this.panel2);
             this.panel_Consulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Consulta.Location = new System.Drawing.Point(138, 0);
@@ -188,6 +190,15 @@ namespace TP_LCII
             this.dgvPrincipal.Size = new System.Drawing.Size(662, 286);
             this.dgvPrincipal.TabIndex = 0;
             // 
+            // lblConsulta
+            // 
+            this.lblConsulta.AutoSize = true;
+            this.lblConsulta.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblConsulta.Location = new System.Drawing.Point(33, 22);
+            this.lblConsulta.Name = "lblConsulta";
+            this.lblConsulta.Size = new System.Drawing.Size(0, 26);
+            this.lblConsulta.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -204,6 +215,7 @@ namespace TP_LCII
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel_Consulta.ResumeLayout(false);
+            this.panel_Consulta.PerformLayout();
             this.panel_Tabla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrincipal)).EndInit();
             this.ResumeLayout(false);
@@ -222,6 +234,7 @@ namespace TP_LCII
         private System.Windows.Forms.Button btn_Consulta3;
         private System.Windows.Forms.DataGridView dgvPrincipal;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblConsulta;
     }
 }
 
