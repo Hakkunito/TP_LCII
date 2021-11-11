@@ -55,9 +55,8 @@ namespace TP_LCII
             this.panel1.Controls.Add(this.btn_Consulta1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(158, 568);
+            this.panel1.Size = new System.Drawing.Size(138, 426);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -70,12 +69,14 @@ namespace TP_LCII
             this.btn_Consulta5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consulta5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btn_Consulta5.ForeColor = System.Drawing.Color.White;
-            this.btn_Consulta5.Location = new System.Drawing.Point(0, 461);
+            this.btn_Consulta5.Location = new System.Drawing.Point(0, 346);
+            this.btn_Consulta5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Consulta5.Name = "btn_Consulta5";
-            this.btn_Consulta5.Size = new System.Drawing.Size(158, 107);
+            this.btn_Consulta5.Size = new System.Drawing.Size(138, 80);
             this.btn_Consulta5.TabIndex = 4;
             this.btn_Consulta5.Text = "Consulta 5";
             this.btn_Consulta5.UseVisualStyleBackColor = false;
+            this.btn_Consulta5.Click += new System.EventHandler(this.btn_Consulta5_Click);
             // 
             // btn_Consulta4
             // 
@@ -86,9 +87,10 @@ namespace TP_LCII
             this.btn_Consulta4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consulta4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btn_Consulta4.ForeColor = System.Drawing.Color.White;
-            this.btn_Consulta4.Location = new System.Drawing.Point(0, 346);
+            this.btn_Consulta4.Location = new System.Drawing.Point(0, 260);
+            this.btn_Consulta4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Consulta4.Name = "btn_Consulta4";
-            this.btn_Consulta4.Size = new System.Drawing.Size(158, 115);
+            this.btn_Consulta4.Size = new System.Drawing.Size(138, 86);
             this.btn_Consulta4.TabIndex = 3;
             this.btn_Consulta4.Text = "Consulta 4";
             this.btn_Consulta4.UseVisualStyleBackColor = false;
@@ -102,9 +104,10 @@ namespace TP_LCII
             this.btn_Consulta3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consulta3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btn_Consulta3.ForeColor = System.Drawing.Color.White;
-            this.btn_Consulta3.Location = new System.Drawing.Point(0, 238);
+            this.btn_Consulta3.Location = new System.Drawing.Point(0, 179);
+            this.btn_Consulta3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Consulta3.Name = "btn_Consulta3";
-            this.btn_Consulta3.Size = new System.Drawing.Size(158, 108);
+            this.btn_Consulta3.Size = new System.Drawing.Size(138, 81);
             this.btn_Consulta3.TabIndex = 2;
             this.btn_Consulta3.Text = "Consulta 3";
             this.btn_Consulta3.UseVisualStyleBackColor = false;
@@ -118,10 +121,9 @@ namespace TP_LCII
             this.btn_Consulta2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consulta2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btn_Consulta2.ForeColor = System.Drawing.Color.White;
-            this.btn_Consulta2.Location = new System.Drawing.Point(0, 117);
-            this.btn_Consulta2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Consulta2.Location = new System.Drawing.Point(0, 88);
             this.btn_Consulta2.Name = "btn_Consulta2";
-            this.btn_Consulta2.Size = new System.Drawing.Size(158, 121);
+            this.btn_Consulta2.Size = new System.Drawing.Size(138, 91);
             this.btn_Consulta2.TabIndex = 1;
             this.btn_Consulta2.Text = "Consulta 2";
             this.btn_Consulta2.UseVisualStyleBackColor = false;
@@ -137,8 +139,9 @@ namespace TP_LCII
             this.btn_Consulta1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btn_Consulta1.ForeColor = System.Drawing.Color.Snow;
             this.btn_Consulta1.Location = new System.Drawing.Point(0, 0);
+            this.btn_Consulta1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Consulta1.Name = "btn_Consulta1";
-            this.btn_Consulta1.Size = new System.Drawing.Size(158, 117);
+            this.btn_Consulta1.Size = new System.Drawing.Size(138, 88);
             this.btn_Consulta1.TabIndex = 0;
             this.btn_Consulta1.Text = "Consulta 1";
             this.btn_Consulta1.UseVisualStyleBackColor = false;
@@ -149,10 +152,9 @@ namespace TP_LCII
             this.panel_Consulta.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.panel_Consulta.Controls.Add(this.panel2);
             this.panel_Consulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_Consulta.Location = new System.Drawing.Point(158, 0);
-            this.panel_Consulta.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel_Consulta.Location = new System.Drawing.Point(138, 0);
             this.panel_Consulta.Name = "panel_Consulta";
-            this.panel_Consulta.Size = new System.Drawing.Size(756, 187);
+            this.panel_Consulta.Size = new System.Drawing.Size(662, 140);
             this.panel_Consulta.TabIndex = 1;
             // 
             // panel2
@@ -160,39 +162,41 @@ namespace TP_LCII
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(629, 0);
+            this.panel2.Location = new System.Drawing.Point(551, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(127, 187);
+            this.panel2.Size = new System.Drawing.Size(111, 140);
             this.panel2.TabIndex = 0;
             // 
             // panel_Tabla
             // 
             this.panel_Tabla.Controls.Add(this.dgvPrincipal);
             this.panel_Tabla.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_Tabla.Location = new System.Drawing.Point(158, 186);
+            this.panel_Tabla.Location = new System.Drawing.Point(138, 140);
+            this.panel_Tabla.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_Tabla.Name = "panel_Tabla";
-            this.panel_Tabla.Size = new System.Drawing.Size(756, 382);
+            this.panel_Tabla.Size = new System.Drawing.Size(662, 286);
             this.panel_Tabla.TabIndex = 2;
             // 
             // dgvPrincipal
             // 
             this.dgvPrincipal.ColumnHeadersHeight = 29;
             this.dgvPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.dgvPrincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvPrincipal.Name = "dgvPrincipal";
             this.dgvPrincipal.RowHeadersWidth = 51;
-            this.dgvPrincipal.Size = new System.Drawing.Size(756, 382);
+            this.dgvPrincipal.Size = new System.Drawing.Size(662, 286);
             this.dgvPrincipal.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(914, 568);
+            this.ClientSize = new System.Drawing.Size(800, 426);
             this.Controls.Add(this.panel_Tabla);
             this.Controls.Add(this.panel_Consulta);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Concesionaria LCII-CAR";
