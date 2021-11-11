@@ -39,7 +39,7 @@ namespace TP_LCII
             this.panel_Consulta = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel_Tabla = new System.Windows.Forms.Panel();
-            this.dgvPrincipal = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel_Consulta.SuspendLayout();
             this.panel_Tabla.SuspendLayout();
@@ -70,14 +70,12 @@ namespace TP_LCII
             this.btn_Consulta5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consulta5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btn_Consulta5.ForeColor = System.Drawing.Color.White;
-            this.btn_Consulta5.Location = new System.Drawing.Point(0, 452);
-            this.btn_Consulta5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Consulta5.Location = new System.Drawing.Point(0, 340);
             this.btn_Consulta5.Name = "btn_Consulta5";
-            this.btn_Consulta5.Size = new System.Drawing.Size(158, 113);
+            this.btn_Consulta5.Size = new System.Drawing.Size(138, 85);
             this.btn_Consulta5.TabIndex = 4;
             this.btn_Consulta5.Text = "Consulta 5";
             this.btn_Consulta5.UseVisualStyleBackColor = false;
-            this.btn_Consulta5.Click += new System.EventHandler(this.btn_Consulta5_Click);
             // 
             // btn_Consulta4
             // 
@@ -88,14 +86,12 @@ namespace TP_LCII
             this.btn_Consulta4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consulta4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btn_Consulta4.ForeColor = System.Drawing.Color.White;
-            this.btn_Consulta4.Location = new System.Drawing.Point(0, 339);
-            this.btn_Consulta4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Consulta4.Location = new System.Drawing.Point(0, 255);
             this.btn_Consulta4.Name = "btn_Consulta4";
-            this.btn_Consulta4.Size = new System.Drawing.Size(158, 113);
+            this.btn_Consulta4.Size = new System.Drawing.Size(138, 85);
             this.btn_Consulta4.TabIndex = 3;
             this.btn_Consulta4.Text = "Consulta 4";
             this.btn_Consulta4.UseVisualStyleBackColor = false;
-            this.btn_Consulta4.Click += new System.EventHandler(this.btn_Consulta4_Click);
             // 
             // btn_Consulta3
             // 
@@ -106,14 +102,12 @@ namespace TP_LCII
             this.btn_Consulta3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consulta3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btn_Consulta3.ForeColor = System.Drawing.Color.White;
-            this.btn_Consulta3.Location = new System.Drawing.Point(0, 226);
-            this.btn_Consulta3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Consulta3.Location = new System.Drawing.Point(0, 170);
             this.btn_Consulta3.Name = "btn_Consulta3";
-            this.btn_Consulta3.Size = new System.Drawing.Size(158, 113);
+            this.btn_Consulta3.Size = new System.Drawing.Size(138, 85);
             this.btn_Consulta3.TabIndex = 2;
             this.btn_Consulta3.Text = "Consulta 3";
             this.btn_Consulta3.UseVisualStyleBackColor = false;
-            this.btn_Consulta3.Click += new System.EventHandler(this.btn_Consulta3_Click);
             // 
             // btn_Consulta2
             // 
@@ -143,13 +137,41 @@ namespace TP_LCII
             this.btn_Consulta1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.btn_Consulta1.ForeColor = System.Drawing.Color.Snow;
             this.btn_Consulta1.Location = new System.Drawing.Point(0, 0);
-            this.btn_Consulta1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Consulta1.Name = "btn_Consulta1";
-            this.btn_Consulta1.Size = new System.Drawing.Size(158, 113);
+            this.btn_Consulta1.Size = new System.Drawing.Size(138, 85);
             this.btn_Consulta1.TabIndex = 0;
             this.btn_Consulta1.Text = "Consulta 1";
             this.btn_Consulta1.UseVisualStyleBackColor = false;
             this.btn_Consulta1.Click += new System.EventHandler(this.btn_Consulta1_Click);
+            // 
+            // panel_Consulta
+            // 
+            this.panel_Consulta.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.panel_Consulta.Controls.Add(this.panel2);
+            this.panel_Consulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_Consulta.Location = new System.Drawing.Point(138, 0);
+            this.panel_Consulta.Name = "panel_Consulta";
+            this.panel_Consulta.Size = new System.Drawing.Size(662, 140);
+            this.panel_Consulta.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(535, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(127, 140);
+            this.panel2.TabIndex = 0;
+            // 
+            // panel_Tabla
+            // 
+            this.panel_Tabla.Controls.Add(this.dataGridView1);
+            this.panel_Tabla.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_Tabla.Location = new System.Drawing.Point(138, 139);
+            this.panel_Tabla.Name = "panel_Tabla";
+            this.panel_Tabla.Size = new System.Drawing.Size(662, 287);
+            this.panel_Tabla.TabIndex = 2;
             // 
             // panel_Consulta
             // 
@@ -161,40 +183,6 @@ namespace TP_LCII
             this.panel_Consulta.Name = "panel_Consulta";
             this.panel_Consulta.Size = new System.Drawing.Size(756, 187);
             this.panel_Consulta.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(611, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(145, 187);
-            this.panel2.TabIndex = 0;
-            // 
-            // panel_Tabla
-            // 
-            this.panel_Tabla.Controls.Add(this.dgvPrincipal);
-            this.panel_Tabla.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_Tabla.Location = new System.Drawing.Point(158, 185);
-            this.panel_Tabla.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel_Tabla.Name = "panel_Tabla";
-            this.panel_Tabla.Size = new System.Drawing.Size(756, 383);
-            this.panel_Tabla.TabIndex = 2;
-            // 
-            // dgvPrincipal
-            // 
-            this.dgvPrincipal.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.dgvPrincipal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dgvPrincipal.Name = "dgvPrincipal";
-            this.dgvPrincipal.RowHeadersWidth = 51;
-            this.dgvPrincipal.RowTemplate.Height = 25;
-            this.dgvPrincipal.Size = new System.Drawing.Size(756, 383);
-            this.dgvPrincipal.TabIndex = 0;
             // 
             // Form1
             // 
